@@ -5,7 +5,8 @@
   },
   "scripts": {
     "start": "gulp serve",
-    "test": "gulp build"
+    "gulp": "gulp",
+    "test": "npm install -g gulp && gulp build"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
