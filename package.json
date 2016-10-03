@@ -4,7 +4,7 @@
     "node": ">=4"
   },
   "scripts": {
-    "start": "npm install -g gulp && gulp serve",
+    "start": "npm install && gulp serve",
     "gulp": "gulp",
     "test": "gulp build"
   },
