@@ -8,7 +8,7 @@ deploy:
     secure: $secret
   region: eu-west-1
   app: costcoachpro
-  env: costcoachpro
+  env: costcoachpro-site
   bucket_name: elasticbeanstalk-eu-west-1-868723413534
   on:
-    branch: test
+    branch: master
