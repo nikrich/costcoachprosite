@@ -10,6 +10,6 @@
  -  app: costcoachpro-home
  -  env: costcoachprohome-prod	
  -  bucket_name: elasticbeanstalk-eu-west-1-868723413534	
-    local_dir: dist
+ -  local_dir: dist
  -  on:		
  -    branch: master
