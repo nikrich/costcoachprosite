@@ -4,9 +4,9 @@
     "node": ">=4"
   },
   "scripts": {
-    "start": "gulp serve",
+    "start": "gulp",
     "gulp": "gulp",
-    "test": "gulp build"
+    "test": "gulp"
   },
   "devDependencies": {
     "babel-core": "^6.4.0",
