@@ -2,14 +2,12 @@ language: node_js
 node_js:
 - 5.5.0
 deploy:
-  provider: elasticbeanstalk
+  provider: s3
   access_key_id: $key
   secret_access_key:
     secure: $secret
-  region: eu-west-1
-  app: costcoachpro-home 
-  env: costcoachprohome-prod
-  bucket_name: elasticbeanstalk-eu-west-1-868723413534
-  bucket_path: dist
+  bucket: "costcoachpro.com"
+  skip_cleanup: true
+  local_dir: dist
   on:
     branch: master
