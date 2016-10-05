@@ -7,8 +7,8 @@ deploy:
   secret_access_key:
     secure: $secret
   region: eu-west-1
-  app: costcoachpro
-  env: costcoachpro-site
+  app: costcoachpro-home 
+  env: costcoachprohome-prod
   local_dir: dist
   bucket_name: elasticbeanstalk-eu-west-1-868723413534
   on:
