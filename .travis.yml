@@ -9,7 +9,7 @@ deploy:
   region: eu-west-1
   app: costcoachpro-home 
   env: costcoachprohome-prod
-  local_dir: dist
   bucket_name: elasticbeanstalk-eu-west-1-868723413534
+  bucket_path: dist
   on:
     branch: master
