@@ -6,7 +6,7 @@ deploy:
   access_key_id: $key
   secret_access_key:
     secure: $secret
-  bucket: "costcoachpro.com"
+  bucket: "test.costcoachpro.com"
   region: eu-west-1
   skip_cleanup: true
   acl: public_read
