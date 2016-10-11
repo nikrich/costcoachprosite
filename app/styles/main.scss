@@ -2,6 +2,7 @@
 // endbower
 
 @import 'https://fonts.googleapis.com/css?family=Roboto';
+@import '_variables.scss';
 
 /*ie9 fix*/
 * {
@@ -12,16 +13,16 @@
 }
 
 body, html {
-    background: #4fba6f; /* Old browsers */
-    background: -moz-linear-gradient(-45deg,  #4fba6f 0%, #009875 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#4fba6f), color-stop(100%,#009875)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(-45deg,  #4fba6f 0%,#009875 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(-45deg,  #4fba6f 0%,#009875 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(-45deg,  #4fba6f 0%,#009875 100%); /* IE10+ */
-    background: linear-gradient(135deg,  #4fba6f 0%,#009875 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fba6f', endColorstr='#009875',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    background: $primary-color; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  $primary-color 0%, $primary-darken 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,$primary-color), color-stop(100%,$primary-darken)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  $primary-color 0%,$primary-darken 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  $primary-color 0%,$primary-darken 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  $primary-color 0%,$primary-darken 100%); /* IE10+ */
+    background: linear-gradient(135deg,  $primary-color 0%,$primary-darken 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$primary-color', endColorstr='$primary-darken',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     
-    color: #fff;
+    color: $text-color;
     
     overflow:hidden;
     width: 100%;
@@ -30,51 +31,18 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 
-.hero-unit {
-  margin: 5% auto 0 auto;  
-  font-size: 18px;    
-  padding: 60px;
-  color: #fff;
-  text-align:center;
-    
-  h1 {
-    font-size: 60px;  
-    margin: -32px 0 0;
-    font-weight: 100;
-  }
-    
-    h2{
-        font-size: 30px;  
-        font-weight: 100;
-        font-style: italic;
-        text-transform: lowercase;
-    }
+a{
+    color: $text-color;
+    text-decoration: none;    
 }
 
-.browserupgrade {
-  margin: 0.2em 0;
-  background: #ccc;
-  color: #000;
-  padding: 0.2em 0;
+h1,h2,h3,h4,h5,h6{
+    font-weight: 300;
 }
 
-@media (max-width: 540px) {
-    .hero-unit {     
-      padding: 10px;
-      color: #fff;
-      text-align:center;
+@import '_desktophd.scss';
+@import '_desktop.scss';
+@import '_tablet.scss';
+@import '_phablet.scss';
+@import '_mobile.scss';
 
-      h1 {
-        font-size: 40px;  
-        margin: -32px 0 0;
-        font-weight: 100;
-      }
-
-        h2{
-            font-size: 20px;  
-            font-weight: 100;
-            font-style: italic;
-            text-transform: lowercase;
-        }
-    }
-}
