@@ -39,14 +39,15 @@
                     a{
                         font-size: 14px;   
                         opacity: 0.8;
-                        transition: all 0.2s ease-in;
+                        border-bottom: 1px solid rgba(255,255,255,0);        
+                        transition: all 0.1s ease-in;
                     }
 
                     a:hover{
                         font-size: 14px;   
                         opacity: 1;
-                        border-bottom: 1px solid #fff;
-                        transition: all 0.2s ease-in;
+                        border-bottom: 1px solid rgba(255,255,255,0.5);        
+                        transition: all 0.1s ease-in;
                     }
                 }
             }
@@ -91,7 +92,9 @@ main.about{
     
     .title{
         display:inline-block;
-       margin-bottom: .5em;
+        margin-bottom: .5em;
+        
+        border-bottom: 2px $primary-color solid;
     }  
     
     .about-text{
@@ -101,6 +104,27 @@ main.about{
         a{
             color: $primary-darken;
         }
+    }
+}
+
+/*
+    FOOTER
+*/
+
+footer.footer{
+    background-color:$dark-color;
+    padding: 0.5em 1em 3em;
+    
+    text-align: center;
+    
+    .title{
+        display:inline-block;
+        margin-bottom: 0;
+        border-bottom: 2px $primary-color solid;
+    }
+    
+    a{
+        color: $primary-color;
     }
 }
 
