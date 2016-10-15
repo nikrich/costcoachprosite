@@ -83,15 +83,15 @@
 
 main.about{       
     
-    padding: 1em 0 3em;
+    padding: 2em 0 5em;
     background-color:$secondary-color;
     color: $text-dark;
     text-align: center;
     
-    background-image: url(../images/mockup.png);
+    background-image: url("../images/mockup 2.png");
     background-repeat: no-repeat;
-    background-position: bottom -180px right;
-    background-size: 900px;
+    background-position: bottom -350px right -700px;
+    background-size: 1800px;
     
     .title{
         display:inline-block;
@@ -116,7 +116,7 @@ main.about{
 
 footer.footer{
     background-color:$dark-color;
-    padding: 0.5em 1em 3em;
+    padding: 2em 1em 5em;
     
     text-align: center;
     
