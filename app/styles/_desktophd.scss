@@ -6,6 +6,7 @@
     height:100%;  
     background-image: url(../images/focus.png);
     background-size: cover;
+    background-attachment: fixed;
     
     
     header.header{
@@ -81,33 +82,127 @@
     MAIN ABOUT
 */
 
-main.about{       
-    
-    padding: 2em 0 5em;
+.about-container{
     background-color:$secondary-color;
     color: $text-dark;
-    text-align: center;
+    background-image: url("../images/focus.png");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;     
     
-    background-image: url("../images/mockup 2.png");
-    background-repeat: no-repeat;
-    background-position: bottom -350px right -700px;
-    background-size: 1800px;
+    div.about{    
+        padding: 2em 0 5em;
+
+        .title{
+            display:inline-block;
+            margin-bottom: .5em;
+
+            border-bottom: 2px $primary-color solid;
+        }  
+
+        .about-text{
+             text-align: right;
+
+            a{
+                color: $primary-darken;
+            }
+        }
+    }
+    
+    .visual{  
+        margin:2em 0;
+        background-image: url("../images/mockup%202.png");
+        background-size: cover;
+    }
+}
+
+.content-container{
+    background-color:$dark-color;
+    
+    .item{
+        height: 400px;         
+        position: relative;
+        background-size: auto 130%;
+        transition: all 0.3s ease-in-out;
+        cursor:pointer;
+        
+         .content{
+            position: absolute;            
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;      
+            padding: 2em;
+            background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+                        
+            .wrap{   
+                position: absolute;          
+                bottom: 0;   
+                transition: all 0.3s ease-in-out;
+                
+                h3{
+                  position: relative;                    
+                }
+
+                 p{
+                     position: relative;                     
+                     opacity: 0; 
+                     transition: all 0.5s ease-in-out;
+                 }
+             }
+             
+        }
+    }
+    
+    .item:hover{
+        background-size: auto 140%; 
+        background-position: -50px -50px;         
+        transition: all 0.3s ease-in-out;
+        
+        .content{         
+            .wrap{
+                bottom: 50px; 
+                transition: all 0.3s ease-in-out;
+                h3{                                
+                    
+                }
+
+                p{   
+                    opacity: 1;
+                    transition: all 0.5s ease-in-out;
+                }
+            }
+        }
+    }
+    
+    .item.first{
+        background-image: url("../images/1stimage.jpg");
+    }
+    
+    .item.second{
+        background-image: url("../images/2ndimage.jpg");
+    }
+    
+    .item.third{
+        background-image: url("../images/3rdimage.jpg");
+    }
+}
+
+.training-container{
+    background-image: url("../images/focus.png");
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;     
     
     .title{
         display:inline-block;
         margin-bottom: .5em;
-        
-        border-bottom: 2px $primary-color solid;
+
+        border-bottom: 2px #fff solid;
     }  
-    
-    .about-text{
-        width: 70%;        
-        text-align: left;        
-        
-        a{
-            color: $primary-darken;
-        }
-    }
 }
 
 /*
@@ -116,7 +211,16 @@ main.about{
 
 footer.footer{
     background-color:$dark-color;
+    color: $text-dark;
+    background-image: url("../images/focus.png");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    
     padding: 2em 1em 5em;
+    background-image: url(../images/focus.png);
+    background-size: cover;
+    background-attachment: fixed;
     
     text-align: center;
     
@@ -130,16 +234,6 @@ footer.footer{
         color: $primary-color;
     }
 }
-
-
-/*
-    GRID
-*/
-.container{
-    width: 1000px;
-    margin:auto;
-}
-
 
 /*
     CONSTRUCTION
