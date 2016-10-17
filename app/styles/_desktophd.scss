@@ -88,7 +88,7 @@
     background-image: url("../images/focus.png");
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;     
+    text-align: left;     
     
     div.about{    
         padding: 2em 0 5em;
@@ -97,11 +97,11 @@
             display:inline-block;
             margin-bottom: .5em;
 
-            border-bottom: 2px $primary-color solid;
+            border-bottom: 2px $primary-darken solid;
         }  
 
         .about-text{
-             text-align: right;
+             text-align: left;
 
             a{
                 color: $primary-darken;
@@ -116,93 +116,140 @@
     }
 }
 
-.content-container{
-    background-color:$dark-color;
+.content-container{  
+    padding-top:3em;
+    background-image: url("../images/focus-clear.jpg");
+    background-size: cover;
+    background-attachment: fixed; 
     
-    .item{
-        height: 400px;         
-        position: relative;
-        background-size: auto 130%;
-        transition: all 0.3s ease-in-out;
-        cursor:pointer;
+    
+    .twelve{
+        background-color:$primary-darken;
+        color: $text-dark;
+        background-image: url("../images/focus.png");
+        background-size: cover;
+        background-attachment: fixed;      
+        text-align:left;
+        color: $text-color;
         
-         .content{
-            position: absolute;            
-            bottom: 0;
-            left: 0;
-            right: 0;
-            top: 0;      
-            padding: 2em;
-            background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
-                        
-            .wrap{   
-                position: absolute;          
-                bottom: 0;   
-                transition: all 0.3s ease-in-out;
-                
-                h3{
-                  position: relative;                    
-                }
-
-                 p{
-                     position: relative;                     
-                     opacity: 0; 
-                     transition: all 0.5s ease-in-out;
-                 }
-             }
-             
+        h2{
+            margin-left:2.5em;
         }
     }
     
-    .item:hover{
-        background-size: auto 140%; 
-        background-position: -50px -50px;         
-        transition: all 0.3s ease-in-out;
+    .wrapper{  
+        margin: 0 2em;
+        height: 595px;
+        background-color:rgba(0,0,0,0.3);
+        box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
         
-        .content{         
-            .wrap{
-                bottom: 50px; 
-                transition: all 0.3s ease-in-out;
-                h3{                                
-                    
-                }
+        .item{
+            height: 450px;         
+            position: relative;
+            background-size: auto 130%;
+            transition: all 0.3s ease-in-out;
+            cursor:pointer;
 
-                p{   
-                    opacity: 1;
-                    transition: all 0.5s ease-in-out;
+             .content{
+                position: absolute;            
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;      
+                padding: 2em;
+                background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+                background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
+
+                .wrap{   
+                    position: absolute;          
+                    bottom: 0;   
+                    transition: all 0.3s ease-in-out;
+
+                    h3{
+                      position: relative;                    
+                    }
+
+                     p{
+                         position: relative;                     
+                         opacity: 0; 
+                         transition: all 0.5s ease-in-out;
+                     }
+                 }
+
+            }
+        }
+
+        .item:hover{
+            background-size: auto 140%; 
+            background-position: -50px -50px;         
+            transition: all 0.3s ease-in-out;
+
+            .content{         
+                .wrap{
+                    bottom: 50px; 
+                    transition: all 0.3s ease-in-out;
+                    h3{                                
+
+                    }
+
+                    p{   
+                        opacity: 1;
+                        transition: all 0.5s ease-in-out;
+                    }
                 }
             }
         }
-    }
-    
-    .item.first{
-        background-image: url("../images/1stimage.jpg");
-    }
-    
-    .item.second{
-        background-image: url("../images/2ndimage.jpg");
-    }
-    
-    .item.third{
-        background-image: url("../images/3rdimage.jpg");
+
+        .item.first{
+            background-image: url("../images/1stimage.jpg");
+        }
+
+        .item.second{
+            background-image: url("../images/2ndimage.jpg");
+        }
+
+        .item.third{
+            background-image: url("../images/3rdimage.jpg");
+        }
     }
 }
 
-.training-container{
-    background-image: url("../images/focus.png");
+.second-content-container{
+    padding: 2em;
+    background-image: url("../images/focus-clear.jpg");
     background-size: cover;
     background-attachment: fixed;
-    text-align: center;     
     
-    .title{
-        display:inline-block;
-        margin-bottom: .5em;
+    .training{
+        background-color: $text-color;
+        color: $dark-color;
+        background-image: url("../images/focus.png");
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 2em 2em;
+        height:100%;
+      
+    }
+    
+    .commitment{
+        background-color: $primary-darken;
+        color: $text-color;
+        background-image: url("../images/focus.png");
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 2em 2em;
+        height:100%;      
+    }
+}
 
-        border-bottom: 2px #fff solid;
-    }  
+.paralax-container{    
+    background-image: url("../images/focus-clear.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height:100px;
+    display:none;
 }
 
 /*
@@ -227,11 +274,11 @@ footer.footer{
     .title{
         display:inline-block;
         margin-bottom: 0;
-        border-bottom: 2px $primary-color solid;
+        border-bottom: 2px $primary-darken solid;
     }
     
     a{
-        color: $primary-color;
+        color: $primary-darken;
     }
 }
 
