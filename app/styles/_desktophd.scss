@@ -139,9 +139,11 @@
     
     .wrapper{  
         margin: 0 2em;
-        height: 595px;
+        height: 420px;
         background-color:rgba(0,0,0,0.3);
         box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        border-radius: 5px;
+        overflow: hidden;
         
         .item{
             height: 450px;         
@@ -160,8 +162,8 @@
                 background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
                 background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
                 background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00999999', endColorstr='#80000000',GradientType=0 ); /* IE6-9 */
-
+                 
+                transition: all 0.3s ease-in-out;          
                 .wrap{   
                     position: absolute;          
                     bottom: 0;   
@@ -185,8 +187,12 @@
             background-size: auto 140%; 
             background-position: -50px -50px;         
             transition: all 0.3s ease-in-out;
-
-            .content{         
+            -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+            filter: grayscale(100%);
+            transition: all 0.3s ease-in-out;
+            
+            .content{      
+                
                 .wrap{
                     bottom: 50px; 
                     transition: all 0.3s ease-in-out;
@@ -203,15 +209,15 @@
         }
 
         .item.first{
-            background-image: url("../images/1stimage.jpg");
+            background-image: url("../images/1stimage.jpg");         
         }
 
         .item.second{
-            background-image: url("../images/2ndimage.jpg");
+            background-image: url("../images/2ndimage.jpg");          
         }
 
         .item.third{
-            background-image: url("../images/3rdimage.jpg");
+            background-image: url("../images/3rdimage.jpg");          
         }
     }
 }
@@ -222,25 +228,28 @@
     background-size: cover;
     background-attachment: fixed;
     
-    .training{
-        background-color: $text-color;
-        color: $dark-color;
-        background-image: url("../images/focus.png");
-        background-size: cover;
-        background-attachment: fixed;
-        padding: 2em 2em;
-        height:100%;
-      
-    }
-    
-    .commitment{
-        background-color: $primary-darken;
-        color: $text-color;
-        background-image: url("../images/focus.png");
-        background-size: cover;
-        background-attachment: fixed;
-        padding: 2em 2em;
-        height:100%;      
+    .container{       
+
+        .training{
+            background-color: $text-color;
+            color: $dark-color;
+            background-image: url("../images/focus.png");
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 2em 2em;
+            height:100%;
+
+        }
+
+        .commitment{
+            background-color: $primary-darken;
+            color: $text-color;
+            background-image: url("../images/focus.png");
+            background-size: cover;
+            background-attachment: fixed;
+            padding: 2em 2em;
+            height:100%;      
+        }
     }
 }
 
