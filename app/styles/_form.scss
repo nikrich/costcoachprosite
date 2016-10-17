@@ -3,6 +3,7 @@
 */
 
 .btn-default{
+    cursor:pointer;
     background-color: #fff;
     color: $dark-color;
     font-weight:bold;
@@ -12,7 +13,7 @@
     margin: 0 0 5px 5px;
     text-transform: uppercase;
     font-size: 0.8em;
-    
+    border: 1px solid transparent;
     transition: all 0.2s ease-in;
 }
 
@@ -21,5 +22,50 @@
     color: $text-color;
     background-color: rgba(0,0,0,0);
     
+    transition: all 0.2s ease-in;    
+}
+
+.btn-primary{
+    cursor:pointer;
+    background-color: $text-color;
+    border: 1px solid $primary-darken;
+    color: $primary-darken;
+    font-weight:bold;  
+    border-radius: 3px;
+    padding: 10px 25px;
+    margin: 0 0 5px 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    
+    transition: all 0.2s ease-in;
+}
+
+.btn-primary:hover{   
+    background-color: $primary-darken;
+    color: $text-color;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);   
+    transition: all 0.2s ease-in;    
+}
+
+.btn-secondary{
+    cursor:pointer;
+    background-color: $text-color;
+    border: 1px solid $primary-darken;
+    color: $primary-darken;
+    font-weight:bold;  
+    border-radius: 3px;
+    padding: 10px 25px;
+    margin: 0 0 5px 5px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    
+    transition: all 0.2s ease-in;
+}
+
+.btn-secondary:hover{   
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    color: $text-color;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);   
     transition: all 0.2s ease-in;    
 }
