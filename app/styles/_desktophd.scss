@@ -88,7 +88,7 @@
     background-image: url("../images/focus.png");
     background-size: cover;
     background-attachment: fixed;
-    text-align: left;     
+    text-align: right;     
     
     div.about{    
         padding: 2em 0 5em;
@@ -100,9 +100,8 @@
             border-bottom: 2px $primary-darken solid;
         }  
 
-        .about-text{
-             text-align: left;
-
+        .about-text{           
+                text-align: justify;     
             a{
                 color: $primary-darken;
             }
@@ -117,7 +116,7 @@
 }
 
 .content-container{  
-    padding-top:3em;
+    padding:3em 0 1em;
     background-image: url("../images/focus-clear.jpg");
     background-size: cover;
     background-attachment: fixed; 
@@ -138,8 +137,8 @@
     }
     
     .wrapper{  
-        margin: 0 2em;
-        height: 420px;
+        margin: 0 5%;
+      
         background-color:rgba(0,0,0,0.3);
         box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
         border-radius: 5px;
@@ -218,6 +217,12 @@
 
         .item.third{
             background-image: url("../images/3rdimage.jpg");          
+        }
+        
+        .read-more{
+            background-color: rgba(0,0,0,0.2);
+            text-align:center;
+            padding: 1em 2em 2em;
         }
     }
 }
