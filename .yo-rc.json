@@ -1,6 +1,3 @@
 {
-  "generator-mocha": {
-    "ui": "tdd",
-    "rjs": false
-  }
+  "generator-react-webpack": {}
 }
