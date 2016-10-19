@@ -1,4 +1,3 @@
-require('styles/app.scss');
 require('styles/focus.scss');
 
 import React from 'react';
