@@ -8,16 +8,16 @@
 // const TestUtils = React.addons.TestUtils;
 import createComponent from 'helpers/shallowRenderHelper';
 
-import Main from 'components/Main';
+import Focus from 'components/Focus';
 
-describe('MainComponent', () => {
-  let MainComponent;
+describe('FocusComponent', () => {
+  let FocusComponent;
 
   beforeEach(() => {
-    MainComponent = createComponent(Main);
+    FocusComponent = createComponent(Focus);
   });
 
   it('should have its component name as default className', () => {
-    expect(MainComponent.props.className).to.equal('index');
+    expect(FocusComponent.props.className).to.equal('focus-block');
   });
 });
