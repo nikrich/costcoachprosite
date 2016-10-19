@@ -1,0 +1,28 @@
+/*
+    HEADER
+*/
+
+.focus-block{
+    height:100%;
+    background-image: url(../images/focus.png);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    section.main{
+        text-align: center;
+        margin-top: 15%;
+        height: 100%;
+
+        h1{
+            font-size: 3rem;
+            margin-bottom:0.5em;
+        }
+
+        p{
+            margin: 0 150px;
+            opacity: 0.9;
+            margin-bottom: 4em;
+        }
+
+    }
+}

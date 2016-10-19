@@ -1,0 +1,48 @@
+header.header{
+
+    height: 85px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+
+    .logo-section{
+
+          float:left;
+
+        .title{
+            display: inline-block;
+            float:left;
+            margin: 0;
+            line-height:2.5rem;
+            font-size:26px;
+            font-weight: 300;
+        }
+
+        img.logo{
+            @extend .title;
+        }
+    }
+
+    .top-nav{
+        float:right;
+        ul.nav{
+            list-style-type: none;
+            li{
+                float: left;
+                margin: 0 10px;
+                a{
+                    font-size: 14px;
+                    opacity: 0.8;
+                    border-bottom: 1px solid rgba(255,255,255,0);
+                    transition: all 0.1s ease-in;
+                }
+
+                a:hover{
+                    font-size: 14px;
+                    opacity: 1;
+                    border-bottom: 1px solid rgba(255,255,255,0.5);
+                    transition: all 0.1s ease-in;
+                }
+            }
+        }
+    }
+}

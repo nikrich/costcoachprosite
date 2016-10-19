@@ -1,13 +1,17 @@
-// bower:scss
-// endbower
-
-
 @import '_variables.scss';
 @import '_form.scss';
 
 /*
     BASE
 */
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
 
 /*ie9 fix*/
 * {
@@ -247,10 +251,3 @@ p{
 .pull-right{
     float:right;
 }
-
-
-@import '_desktophd.scss';
-@import '_desktop.scss';
-@import '_tablet.scss';
-@import '_phablet.scss';
-@import '_mobile.scss';
