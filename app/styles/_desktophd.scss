@@ -3,25 +3,25 @@
 */
 
 .focus-block{
-    height:100%;  
+    height:100%;
     background-image: url(../images/focus.png);
     background-size: cover;
     background-attachment: fixed;
-    
-    
+
+
     header.header{
-    
+
         height: 85px;
         padding: 20px 0;
-        border-bottom: 1px solid rgba(255,255,255,0.3);        
+        border-bottom: 1px solid rgba(255,255,255,0.3);
 
-        .logo-section{    
+        .logo-section{
 
-              float:left;  
+              float:left;
 
             .title{
                 display: inline-block;
-                float:left;  
+                float:left;
                 margin: 0;
                 line-height:2.5rem;
                 font-size:26px;
@@ -29,28 +29,28 @@
             }
 
             img.logo{
-                @extend .title;                    
+                @extend .title;
             }
         }
 
         .top-nav{
-            float:right;       
+            float:right;
             ul.nav{
                 list-style-type: none;
                 li{
                     float: left;
                     margin: 0 10px;
                     a{
-                        font-size: 14px;   
+                        font-size: 14px;
                         opacity: 0.8;
-                        border-bottom: 1px solid rgba(255,255,255,0);        
+                        border-bottom: 1px solid rgba(255,255,255,0);
                         transition: all 0.1s ease-in;
                     }
 
                     a:hover{
-                        font-size: 14px;   
+                        font-size: 14px;
                         opacity: 1;
-                        border-bottom: 1px solid rgba(255,255,255,0.5);        
+                        border-bottom: 1px solid rgba(255,255,255,0.5);
                         transition: all 0.1s ease-in;
                     }
                 }
@@ -60,7 +60,7 @@
 
     section.main{
         text-align: center;
-        margin-top: 15%;    
+        margin-top: 15%;
         height: 100%;
 
         h1{
@@ -68,9 +68,9 @@
             margin-bottom:0.5em;
         }
 
-        p{      
+        p{
             margin: 0 150px;
-            opacity: 0.9;    
+            opacity: 0.9;
             margin-bottom: 4em;
         }
 
@@ -88,9 +88,9 @@
     background-image: url("../images/focus.png");
     background-size: cover;
     background-attachment: fixed;
-    text-align: right;     
-    
-    div.about{    
+    text-align: right;
+
+    div.about{
         padding: 2em 0 5em;
 
         .title{
@@ -98,83 +98,86 @@
             margin-bottom: .5em;
 
             border-bottom: 2px $primary-darken solid;
-        }  
+        }
 
-        .about-text{           
-                text-align: justify;     
+        .about-text{
+                text-align: justify;
             a{
                 color: $primary-darken;
             }
         }
     }
-    
-    .visual{  
+
+    .visual{
         margin:2em 0;
         background-image: url("../images/mockup%202.png");
         background-size: cover;
     }
 }
 
-.content-container{  
+.content-container{
     padding:3em 0 1em;
     background-image: url("../images/focus-clear.jpg");
     background-size: cover;
-    background-attachment: fixed; 
-    
-    
+    background-attachment: fixed;
+
+
     .twelve{
         background-color:$primary-darken;
         color: $text-dark;
         background-image: url("../images/focus.png");
         background-size: cover;
-        background-attachment: fixed;      
+        background-attachment: fixed;
         text-align:left;
         color: $text-color;
-        
+
         h2{
             margin-left:2.5em;
         }
     }
-    
-    .wrapper{  
+
+    .wrapper{
         margin: 0 5%;
-      
+
         background-color:rgba(0,0,0,0.3);
         box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
         border-radius: 5px;
         overflow: hidden;
-        
+
         .item{
-            height: 450px;         
+            height: 450px;
             position: relative;
             background-size: auto 130%;
             transition: all 0.3s ease-in-out;
             cursor:pointer;
+            overflow: hidden;
 
              .content{
-                position: absolute;            
-                bottom: 0;
+                position: absolute;
+                bottom: -40px;
                 left: 0;
                 right: 0;
-                top: 0;      
+                top: 0;
                 padding: 2em;
                 background: -moz-linear-gradient(top,  rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
                 background: -webkit-linear-gradient(top,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
                 background: linear-gradient(to bottom,  rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                 
-                transition: all 0.3s ease-in-out;          
-                .wrap{   
-                    position: absolute;          
-                    bottom: 0;   
+
+                transition: all 0.3s ease-in-out;
+                .wrap{
+                    position: absolute;
+                    bottom: 0;
                     transition: all 0.3s ease-in-out;
 
                     h3{
-                      position: relative;                    
+                      position: relative;
+                      margin-bottom: 0;
                     }
 
-                     p{
-                         position: relative;                     
-                         opacity: 0; 
+                     .sub{
+                         padding: 0 1em 1em;
+                         position: relative;
+                         opacity: 0;
                          transition: all 0.5s ease-in-out;
                      }
                  }
@@ -183,23 +186,23 @@
         }
 
         .item:hover{
-            background-size: auto 140%; 
-            background-position: -50px -50px;         
+            background-size: auto 140%;
+            background-position: -50px -50px;
             transition: all 0.3s ease-in-out;
             -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
             filter: grayscale(100%);
             transition: all 0.3s ease-in-out;
-            
-            .content{      
-                
+
+            .content{
+
                 .wrap{
-                    bottom: 50px; 
+                    bottom: 20px;
                     transition: all 0.3s ease-in-out;
-                    h3{                                
+                    h3{
 
                     }
 
-                    p{   
+                    .sub{
                         opacity: 1;
                         transition: all 0.5s ease-in-out;
                     }
@@ -208,57 +211,117 @@
         }
 
         .item.first{
-            background-image: url("../images/1stimage.jpg");         
+            background-image: url("../images/1stimage.jpg");
         }
 
         .item.second{
-            background-image: url("../images/2ndimage.jpg");          
+            background-image: url("../images/2ndimage.jpg");
         }
 
         .item.third{
-            background-image: url("../images/3rdimage.jpg");          
+            background-image: url("../images/3rdimage.jpg");
         }
-        
+
         .read-more{
             background-color: rgba(0,0,0,0.2);
             text-align:center;
             padding: 1em 2em 2em;
+
+            p{
+              margin-bottom: 2em;
+            }
         }
     }
 }
 
 .second-content-container{
-    padding: 2em;
+    padding: 1em 5% 2em;
     background-image: url("../images/focus-clear.jpg");
     background-size: cover;
     background-attachment: fixed;
-    
-    .container{       
+    border-radius: 5px;
+    overflow: hidden;
 
-        .training{
-            background-color: $text-color;
-            color: $dark-color;
-            background-image: url("../images/focus.png");
-            background-size: cover;
-            background-attachment: fixed;
-            padding: 2em 2em;
-            height:100%;
-
-        }
-
-        .commitment{
-            background-color: $primary-darken;
-            color: $text-color;
-            background-image: url("../images/focus.png");
-            background-size: cover;
-            background-attachment: fixed;
-            padding: 2em 2em;
-            height:100%;      
-        }
+    .inner{
+      border-radius: 5px;
+      overflow: hidden;
     }
+
+      .training{
+          background-color: $text-color;
+          color: $dark-color;
+          padding: 2em 4em;
+          text-align: left;
+
+          .title{
+              display:inline-block;
+              margin-bottom: .5em;
+
+              border-bottom: 2px $primary-darken solid;
+          }
+
+          p, ul{
+            text-align: justify;
+            padding-right: 2em;
+          }
+      }
+
+      .commitment{
+          background-color: $primary-darken;
+          padding: 2em 4em;
+          text-align: left;
+
+          .title{
+              display:inline-block;
+              margin-bottom: .5em;
+
+              border-bottom: 2px $text-color solid;
+          }
+
+          p, ul{
+            text-align: justify;
+            padding-right: 2em;
+          }
+      }
+
 }
 
-.paralax-container{    
+.third-content-container{
+    padding: 1em 5% 2em;
+    background-image: url("../images/focus-clear.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .inner{
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+      .content{
+          background-color: $text-color;
+          color: $dark-color;
+          padding: 2em 4em;
+          text-align: center;
+
+          .title{
+              display:inline-block;
+              margin-bottom: .5em;
+
+              border-bottom: 2px $primary-darken solid;
+          }
+
+          a{
+            display:inline-block;;
+            margin-top: 1em;
+            padding: 20px 50px;
+            font-size: 16px;
+          }
+        }
+}
+
+.paralax-container{
     background-image: url("../images/focus-clear.jpg");
     background-size: cover;
     background-attachment: fixed;
@@ -277,20 +340,20 @@ footer.footer{
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
-    
+
     padding: 2em 1em 5em;
     background-image: url(../images/focus.png);
     background-size: cover;
     background-attachment: fixed;
-    
+
     text-align: center;
-    
+
     .title{
         display:inline-block;
         margin-bottom: 0;
         border-bottom: 2px $primary-darken solid;
     }
-    
+
     a{
         color: $primary-darken;
     }
@@ -301,20 +364,20 @@ footer.footer{
 */
 
 .hero-unit {
-  margin: 5% auto 0 auto;  
-  font-size: 18px;    
+  margin: 5% auto 0 auto;
+  font-size: 18px;
   padding: 60px;
   color: #fff;
   text-align:center;
-    
+
   h1 {
-    font-size: 60px;  
+    font-size: 60px;
     margin: -32px 0 0;
     font-weight: 100;
   }
-    
+
     h2{
-        font-size: 30px;  
+        font-size: 30px;
         font-weight: 100;
         font-style: italic;
         text-transform: lowercase;
