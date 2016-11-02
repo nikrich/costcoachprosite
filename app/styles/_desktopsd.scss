@@ -1,10 +1,11 @@
-@media (max-width: 750px) and (min-width: 550px) {
+@media (min-width: 1000px) and (max-width: 1499px) {
+
   /*
       GRID
   */
 
   .container {
-    width: 95%;
+    width: 90%;
   }
   .column:first-child, .columns:first-child {
     margin-left: 0;
@@ -130,51 +131,11 @@
   }
 
   /*
-      MAIN ABOUT
-  */
-
-  .about-container{
-      background-color:$secondary-color;
-      color: $text-dark;
-      background-image: url("../images/focus.png");
-      background-size: cover;
-      background-attachment: fixed;
-      text-align: right;
-
-      div.about{
-          padding: 2em 0 5em;
-
-          .title{
-              display:inline-block;
-              margin-bottom: .5em;
-
-              border-bottom: 2px $primary-darken solid;
-          }
-
-          .about-text{
-                  text-align: justify;
-              a{
-                  color: $primary-darken;
-              }
-          }
-      }
-
-      .visual{
-          width:30%;
-          margin:2em 0;
-          background-image: url("../images/mockup%202.png");
-          background-size: cover;
-      }
-  }
-
-  /*
       SOFTWARE
   */
 
   .content-container{
     .wrapper{
-      width: 95%;
-      margin: auto;
       .item{
             background-size: 100% auto;
 
@@ -201,9 +162,5 @@
       max-width: none;
       border-radius: 0;
     }
-  }
-
-  .third-content-container{
-    padding: 1em 0 0;
   }
 }
