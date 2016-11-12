@@ -129,6 +129,14 @@
   }
 }
 
+/*
+  MOBILE NAV
+*/
+
+#mnav{
+  display: none;
+}
+
 
 /*
     HEADER
@@ -319,8 +327,7 @@
 
         .item:hover{
             background-size: auto 140%;
-            background-position: -50px -50px;
-            transition: all 0.3s ease-in-out;
+            background-position: -50px -50px;          
             -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
             filter: grayscale(100%);
             transition: all 0.3s ease-in-out;
@@ -421,7 +428,7 @@
     padding: 1em 5% 2em;
     background-image: url("../images/focus-clear.jpg");
     background-size: cover;
-    background-attachment: fixed;    
+    background-attachment: fixed;
     overflow: hidden;
 
     .inner{
