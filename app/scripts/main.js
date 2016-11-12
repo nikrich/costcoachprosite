@@ -21,17 +21,17 @@ var jsMobileNav = function(obj){
       main: document.getElementById(obj.mainContentId)
     }
 
-    obj.dom.button.addEventListener("click",function(e){
+    obj.dom.button.addEventListener('click',function(e){
       obj.dom.main.className += ' menuOpen';
       obj.dom.menu.className += ' menuOpen';
     });
 
-    obj.dom.close.addEventListener("click",function(e){
+    obj.dom.close.addEventListener('click',function(e){
       obj.dom.main.className -= ' menuOpen';
       obj.dom.menu.className -= ' menuOpen';
     });
 
-    obj.dom.menu.addEventListener("click",function(e){
+    obj.dom.menu.addEventListener('click',function(e){
       obj.dom.main.className -= ' menuOpen';
       obj.dom.menu.className -= ' menuOpen';
     });
